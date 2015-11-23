@@ -1,0 +1,32 @@
+<!doctype html>
+<html> 
+<head> 
+<meta charset="utf-8"/> 
+<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+<title>HTML5 VideoBackground</title>
+<link rel="stylesheet" href="styles/style.css"/> 
+<script>EBModulesToLoad = ['Video'];</script>
+<script type="text/javascript" src="../../scripts/EBLoader.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+<script type="text/javascript">EB.initExpansionParams(0, 0, 800, 600);</script>
+</head> 
+<body onLoad="EBInitialized();">
+	<div id="video-container">
+		<video id="video" poster="images/poster.jpg" >
+			<source src="videos/video.mp4" type="video/mp4">
+			<source src="videos/video.webm" type="video/webm">
+			Your browser does not support the <code>video</code> element.
+		</video>
+	</div>
+	<div id="button-container">
+   		<div id="expand-button" class="button"></div>
+   		<div id="logo-button" class="button"></div>
+		<div id="exit-button" class="button"></div>
+		<div id="audio-button" class="button"></div>
+        <div id="pause-button" class="button"></div>
+		<div id="close-button" class="button"></div>
+		<div id="restart-button" class="button"></div>
+		<div id="videoClick" class="button"></div>
+	</div>
+</body> 
+</html>
