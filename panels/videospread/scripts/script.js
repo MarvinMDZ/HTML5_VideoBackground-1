@@ -9,12 +9,13 @@ function startAd() {
 	initializeGlobalObjects();
 	initializeVideo();
 	subscribeUserEvents();
-	if(autoPlayVideo==true){
+	if(autoPlayVideo=="true"){
 		if (allowVideoAutoPlay) {
 			playVideoOnAdExpand(video);
 		}
 	}
-	if(loopVideo==true){
+	
+	if(loopVideo=="true"){
 		video.loop = true;
 	}
 	video.addEventListener('ended',videoEndMovie,false);
@@ -202,7 +203,7 @@ function handleCloseButtonClick() {
 	expandButton.style.display = "block";
 	logoButton.style.display = "none";
 	
-	if(muteCollapseVideo){
+	if(muteCollapseVideo=="true"){
 		if(!isMuteButtonEngaged()) {
 			video.muted = true;
 			setAudioButton();
@@ -369,9 +370,9 @@ function EBInitialized() {
 	videoSpreadConfig.videoAutoPlayDelay 	= (getCustomJSVar("mdVideoAutoPlayDelay", 1) * 1) + 0.5;
 	videoSpreadConfig.expandingAnimateTime 	= (getCustomJSVar("mdAnimateTime", 0.5) * 1) + 0.25;
 	
-	autoPlayVideo 		= getCustomJSVar("mdAutoPlayVideo", true);
-	loopVideo 			= getCustomJSVar("mdLoopVideo", true);
-	muteCollapseVideo 	= getCustomJSVar("mdMuteCollapseVideo", false);
+	autoPlayVideo 		= getCustomJSVar("mdAutoPlayVideo", "true");
+	loopVideo 			= getCustomJSVar("mdLoopVideo", "true");
+	muteCollapseVideo 	= getCustomJSVar("mdMuteCollapseVideo", "false");
 
 	
 	ua = navigator.userAgent;
