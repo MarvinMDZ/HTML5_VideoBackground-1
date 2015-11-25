@@ -2,8 +2,10 @@ var originalVideoWidth = 852;
 var originalVideoHeight = 480;
 var videoContainer, video, buttonContainer;
 var closeButton,audioButton,exitButton,restartButton,expandButton,logoButton;
-var playVideo, muteCollapseVideo 	= false;
-var autoPlayVideo,loopVideo 		= true;
+var playVideo 			= false;
+var muteCollapseVideo 	= false;
+var autoPlayVideo 	= true
+var loopVideo 		= true;
 
 function startAd() {
 	initializeGlobalObjects();
@@ -199,9 +201,7 @@ function handleAudioButtonClick() {
 
 // handle scroll down button clicked
 function handleCloseButtonClick() {
-	closeButton.style.display = "none";
-	expandButton.style.display = "block";
-	logoButton.style.display = "none";
+	showCloseFullMode();
 	
 	if(muteCollapseVideo=="true"){
 		if(!isMuteButtonEngaged()) {
@@ -316,6 +316,11 @@ function playVideoOnAdExpand(myVideo) {
 	}, getVideoAutoPlayDelay());	
 }
 
+function showCloseFullMode(){
+	closeButton.style.display = "none";
+	expandButton.style.display = "block";
+	logoButton.style.display = "none";
+}
 
 function showCloseFullButton(){
 	playVideo = false;
@@ -333,6 +338,9 @@ function onMessageReceived(event) {
 			switch(messageData.type) {
 				case "expandFull":
 					showCloseFullButton();
+					break;
+				case "closeFull":
+					showCloseFullMode();
 					break;
 				case "setExpandType":
 					setExpandType(messageData.expandType);
