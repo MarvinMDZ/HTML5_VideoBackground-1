@@ -1,0 +1,43 @@
+<!doctype html> 
+<html> 
+<head> 
+<meta charset="utf-8"/> 
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+<title>HTML5 skinVisibilityPanel</title>
+<script type="text/javascript" src="http://ds.serving-sys.com/BurstingScript/adKit/adkit.js"></script>
+<script>try{EB.initExpansionParams(0, 0, 0, 0);}catch(e){}</script>
+<style>
+	html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figure, figcaption, hgroup, menu, footer, header, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; } article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, nav, section, audio, video { display: block; } a img {border: 0;}
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	#clickthroughButton {
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 50;
+	}
+	#skinVisibilityPanel{
+		width: 100px;
+		height: 300px;
+		background-color:transparent;
+		cursor: pointer;
+	}
+</style>
+</head>
+<body>
+	<div id="skinVisibilityPanel">
+		<div id="clickthroughButton"></div>
+	</div>
+	<script>
+		adkit.onReady(function(){
+			clickthroughButton = document.getElementById("clickthroughButton");
+			clickthroughButton.addEventListener("click", function(){
+				EB.clickthrough();
+			});
+		});
+	</script>   <!-- !!!!!!!! NO ELIMINAR !!!!!!!! -->
+</body> 
+</html>

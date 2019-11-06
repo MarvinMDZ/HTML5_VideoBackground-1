@@ -8,37 +8,47 @@
 <script type="text/javascript" src="http://ds.serving-sys.com/BurstingScript/adKit/adkit.js"></script>
 <script type="text/javascript">
 
-	var expandButton;
+var expandButton;
 
-	function initializeCreative()
-	{
+function initializeCreative()
+{
 
-		
-		adkit.expand({
-	       panelName: "skinVideo",
-	       actionType: adkit.ActionType.AUTO,
-	       useCustomClose: true
-	   });
+	
+	adkit.expand({
+	   panelName: "skinVideo",
+	   actionType: adkit.ActionType.AUTO,
+	   useCustomClose: true
+   });
+   adkit.expand({
+	   panelName: "verticalVisibilityPanel",
+	   actionType: adkit.ActionType.AUTO,
+	   useCustomClose: true
+   });
+   adkit.expand({
+	   panelName: "horizontalVisibilityPanel",
+	   actionType: adkit.ActionType.AUTO,
+	   useCustomClose: true
+   });
 
-		expandButton = document.getElementById("expandButton");
-		expandButton.addEventListener("click", handleExpandButtonClick);
+	expandButton = document.getElementById("expandButton");
+	expandButton.addEventListener("click", handleExpandButtonClick);
 
-		var rnd = Math.floor(Math.random()*900000) + 100000;
-		var img = new Image();
-		img.src = 'https://bs.serving-sys.com/Serving/adServer.bs?cn=display&c=19&pli=1074204694&adid=1074740814&ord='+rnd;
-	}
+	var rnd = Math.floor(Math.random()*900000) + 100000;
+	var img = new Image();
+	img.src = 'https://bs.serving-sys.com/Serving/adServer.bs?cn=display&c=19&pli=1074204694&adid=1074740814&ord='+rnd;
+}
 
-	function handleExpandButtonClick()
-	{
-		EB.clickthrough();
-		//EB._sendMessage("baseExpansionRequest", {});
-	}
+function handleExpandButtonClick()
+{
+	EB.clickthrough();
+	//EB._sendMessage("baseExpansionRequest", {});
+}
 
 </script>
 </head> 
 <body>
 	<div id="banner">
-		<button id="expandButton"></button>
+		<button id="expandButton"></button>	
 	</div>
 	<script>adkit.onReady(initializeCreative);</script>   <!-- !!!!!!!! NO ELIMINAR !!!!!!!! -->
 </body> 

@@ -47,9 +47,6 @@ video {
 	width: 980px;
 	height: 150px;
 	background-color: transparent;
-	background-image: url(../images/expand.png);
-	background-repeat: no-repeat;
-	background-position: center;
 	z-index: 999;
 }
 
@@ -66,7 +63,7 @@ video {
 	background-image: url(../images/static1920x1080.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
+	background-size: contain;
 	z-index: 30;
 }
 

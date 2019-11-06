@@ -7,9 +7,9 @@ define({
         {      
             "name": "Main_Banner",
             "asset": "index.html",
-            "width": "1",
-            "height": "1",
-            "defaultImage": "images/1x1.jpg"
+            "width": "980",
+            "height": "250",
+            "defaultImage": "images/backup.jpg"
         }
     ],
     "panels": [
@@ -22,6 +22,28 @@ define({
             "delayedExpansion": "boolean",
             "positionType": "pageRelativePercentage",
             "x": "0",
+            "y": "0"
+        },
+        {
+            "name": "horizontalVisibilityPanel",
+            "asset": "panels/visibilityPanel/horizontalVisibilityPanel.html",
+            "width": "980",
+            "height": "100",                                                
+            "autoCollapse": "never",
+            "delayedExpansion": "boolean",
+            "positionType": "bannerRelativePixels",
+            "x": "0",
+            "y": "150"
+        },
+        {
+            "name": "verticalVisibilityPanel",
+            "asset": "panels/visibilityPanel/verticalVisibilityPanel.html",
+            "width": "100",
+            "height": "300",                                                
+            "autoCollapse": "never",
+            "delayedExpansion": "boolean",
+            "positionType": "bannerRelativePixels",
+            "x": "980",
             "y": "0"
         }   
     ]  
