@@ -2,9 +2,9 @@
 
 Plantilla genérica con todo lo necesario para crear formatos tipo VideoBackground utilizando workspaces de Sizmek.
 
-## <img src="https://github.com/MarvinMDZ/Readme_Resources/raw/master/Images/warning.png" alt="Sizmek" width="20" height="20" /> WARNING <img src="https://github.com/MarvinMDZ/Readme_Resources/raw/master/Images/warning.png" alt="Sizmek" width="20" height="20" />
+# <img src="https://github.com/MarvinMDZ/Readme_Resources/raw/master/Images/warning.png" alt="Sizmek" width="30" height="30" /> WARNING <img src="https://github.com/MarvinMDZ/Readme_Resources/raw/master/Images/warning.png" alt="Sizmek" width="30" height="30" />
 
-#### <p style='color:red;text-align:center;'>Esta plantilla utiliza un sistema que mide la visibilidad del formato mediante un panel flotante que se situa en el lateral del skin o en su defecto, sobre el billboard de la pieza. Este sistema no sigue el standard de visibilidad de la IAB. La utilización de esta plantilla implica que entiendes y aceptas este sistema de medición.</p>
+#### Esta plantilla utiliza un sistema que mide la visibilidad del formato mediante un panel flotante que se situa en el lateral del skin o en su defecto, sobre el billboard de la pieza. Este sistema no sigue el standard de visibilidad de la IAB. La utilización de esta plantilla implica que entiendes y aceptas este sistema de medición.
 
 ## Descripción
 
