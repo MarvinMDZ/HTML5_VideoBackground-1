@@ -13,7 +13,7 @@ Este formato lanza un panel con video que se sitúa por detrás del contenido de
 
 La plantilla admite cualquier tipo de contenido html y javascript que sea necesario, hay que entender esta plantilla como una base mínima para trabajar el formato y que se podrá modificar para que encaje con las necesidades creativas de la campaña.
 
-
+<a href="https://github.com/MarvinMDZ/Readme_Resources/raw/master/Videos/VB_Demo.mp4" target="_blank"><img src="https://github.com/MarvinMDZ/Readme_Resources/raw/master/Images/verDemo.png" alt="Sizmek" width="165" height="44" /></a>
 
 ## Ficheros de la plantilla
 
@@ -32,8 +32,6 @@ Es posible hacer que el formato se expanda realizando la llamada desde este fich
 EB._sendMessage("baseExpansionRequest", {});
 
 ```
-------
-
 ***
 
 #### panels/skinVideo/index.html
@@ -82,7 +80,7 @@ Este panel se emplea para medir la visibilidad en los casos en los que la resolu
 
 ## Configuración en plataforma
 
-Configurar el formato en la <a href="https://platform.sizmek.com">PLATAFORMA DE SIZMEK</a> es muy sencillo, simplemente tendrás que crear un zip con los ficheros de la creatividad, subir el zip a la plataforma y añadirlo a una creatividad; de forma automática se generará la configuración necesaria del formato y solamente tendremos que desmarcar en el apartado de paneles la opcion "Show Single Panel at a Time if Ad Contains Multiple Panels".
+Configurar el formato en la <a href="https://platform.sizmek.com">PLATAFORMA DE SIZMEK</a> es muy sencillo, simplemente tendrás que crear un zip con los ficheros de la creatividad, subir el zip a la plataforma y añadirlo a una creatividad; de forma automática se generará la configuración necesaria del formato y solamente tendremos que desmarcar en el apartado de paneles la opcion "Show Single Panel at a Time if Ad Contains Multiple Panels". Puedes ver el proceso completo de subida y setup en este <a href="https://github.com/MarvinMDZ/Readme_Resources/raw/master/Videos/VB_Subida.mp4" target="_blank">VIDEO</a>
 
 La configuración necesaria para que funcione el formato sería la siguiente:
 
