@@ -13,6 +13,8 @@ Este formato lanza un panel con video que se sitúa por detrás del contenido de
 
 La plantilla admite cualquier tipo de contenido html y javascript que sea necesario, hay que entender esta plantilla como una base mínima para trabajar el formato y que se podrá modificar para que encaje con las necesidades creativas de la campaña.
 
+
+
 ## Ficheros de la plantilla
 
 La plantilla consta de diferentes htmls para cada una de las partes que la componen; a parte de estos ficheros html, también encontraremos ficheros CSS con los estilos predefinidos y ficheros JAVASCRIPT donde se gestionan la mayoría de las funcionalidades de la plantilla.
@@ -30,12 +32,17 @@ Es posible hacer que el formato se expanda realizando la llamada desde este fich
 EB._sendMessage("baseExpansionRequest", {});
 
 ```
+------
+
+***
 
 #### panels/skinVideo/index.html
 
 Este fichero es el que contiene el video que se muestra por detrás del contenido del soporte y el botón de expansión que se sitúa en el hueco superior en los soportes que lo permiten. Por defecto, el video se mostrará ocupando todo el espacio posible sin deformarse lo que puede producir en determinadas resoluciones que se corten zonas en los laterales. Este comportamiento se puede modificar (aunque no es recomendable) desde el fichero CSS.
 
 En el caso de la imagen estática que aparece cuando el video se ha reproducido o cuando el usuario ya ha visto la creatividad, la configuración esta hecha de forma que la imagen aparece en tamaño real alineada con la parte superior de la pagina y centrada en horizontal. Se puede utilizar como ayuda el PSD que encontrarás en la carpeta helpers que se adjunta con la plantilla.
+
+***
 
 #### panels/skinVideo/setup.js
 
@@ -59,19 +66,25 @@ var setup = {
 };
 ```
 
+***
+
 #### panels/visibilityPanel/horizontalVisibilityPanel.html
 
 Este panel se emplea para medir la visibilidad en los casos en los que la resolución del navegador sea tan pequeña que no quede espacio para ver los laterales cuando el formato no esta expandido. No es necesario aplicar ninguna modificación sobre este fichero.
+
+***
 
 #### panels/visibilityPanel/verticalVisibilityPanel.html
 
 Este panel se emplea para medir la visibilidad en los casos en los que la resolución del navegador permita ver los laterales cuando el formato no esta expandido. No es necesario aplicar ninguna modificación sobre este fichero.
 
+***
+
 ## Configuración en plataforma
 
-Configurar el formato en la <a href="https://platform.sizmek.com">PLATAFORMA DE SIZMEK</a> es muy sencillo, simplemente tendrás que crear un zip con los ficheros de la creatividad, subir el zip a la plataforma y añadirlo a una creatividad; de forma automática se generará la configuración necesaria del formato y solamente tendremos que desmarcar en el apartado de paneles la opcion "Show single panel at a Time if Ad Contains Multiple Panels".
+Configurar el formato en la <a href="https://platform.sizmek.com">PLATAFORMA DE SIZMEK</a> es muy sencillo, simplemente tendrás que crear un zip con los ficheros de la creatividad, subir el zip a la plataforma y añadirlo a una creatividad; de forma automática se generará la configuración necesaria del formato y solamente tendremos que desmarcar en el apartado de paneles la opcion "Show Single Panel at a Time if Ad Contains Multiple Panels".
 
-LA configuración necesaria para que funcione el formato sería la siguiente:
+La configuración necesaria para que funcione el formato sería la siguiente:
 
 **Ad Format:** HTML5 Expandable Format
 
@@ -80,6 +93,7 @@ LA configuración necesaria para que funcione el formato sería la siguiente:
   * **Workspace Folder:** Fichero zip de la creatividad subido a la plataforma.
 
 **PANELS**
+
 Dentro del apartado de paneles tendremos que añadir los tres paneles de la creatividad con la siguiente configuracion:
 
 1. **Skin Video**
@@ -93,26 +107,28 @@ Dentro del apartado de paneles tendremos que añadir los tres paneles de la crea
     * **Retractions:** Never
 
 2. **Horizontal Visibility Panel**
-  * **Panel Name:** horizontalVisibilityPanel
-  * **Asset:** Seleccionamos el fichero html correspondiente al horizontalVisibilityPanel de la plantilla.
-  * **X:** 0
-  * **Y:** 150
-  * **Width:** 980
-  * **Height:** 100
-  * **Position Type:** Banner Relative
-  * **Retractions:** Never
+    * **Panel Name:** horizontalVisibilityPanel
+    * **Asset:** Seleccionamos el fichero html correspondiente al horizontalVisibilityPanel de la plantilla.
+    * **X:** 0
+    * **Y:** 150
+    * **Width:** 980
+    * **Height:** 100
+    * **Position Type:** Banner Relative
+    * **Retractions:** Never
 
 3. **Vertical Visibility Panel**
-  * **Panel Name:** verticalVisibilityPanel
-  * **Asset:** Seleccionamos el fichero html correspondiente al verticalVisibilityPanel de la plantilla.
-  * **X:** 980
-  * **Y:** 0
-  * **Width:** 100
-  * **Height:** 300
-  * **Position Type:** Banner Relative
-  * **Retractions:** Never
+    * **Panel Name:** verticalVisibilityPanel
+    * **Asset:** Seleccionamos el fichero html correspondiente al verticalVisibilityPanel de la plantilla.
+    * **X:** 980
+    * **Y:** 0
+    * **Width:** 100
+    * **Height:** 300
+    * **Position Type:** Banner Relative
+    * **Retractions:** Never
 
-Este formato necesita un script en la configuración de la plataforma, pídele al equipo de Sizmek que te lo configure.
+En la misma seccion de panels tendremos que desmarcar la opción: "Show Single Panel at a Time if Ad Contains Multiple Panels"
+
+Una vez configurado el formato, es necesario que se añada un custom script por parte del equipo de sizmek para que se ajuste correctamente. Envía un correo al equipo <a href="mailto:creativesupport-spain@sizmek.com">Soporte Creativo de Sizmek</a> con el id de la creatividad y ellos te lo configurarán en tu cuenta.
 
 ## FAQS
 
