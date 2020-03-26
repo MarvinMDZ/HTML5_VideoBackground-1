@@ -69,13 +69,54 @@ Este panel se emplea para medir la visibilidad en los casos en los que la resolu
 
 ## Configuración en plataforma
 
+Configurar el formato en la <a href="https://platform.sizmek.com">PLATAFORMA DE SIZMEK</a> es muy sencillo, simplemente tendrás que crear un zip con los ficheros de la creatividad, subir el zip a la plataforma y añadirlo a una creatividad; de forma automática se generará la configuración necesaria del formato y solamente tendremos que desmarcar en el apartado de paneles la opcion "Show single panel at a Time if Ad Contains Multiple Panels".
+
+LA configuración necesaria para que funcione el formato sería la siguiente:
+
+**Ad Format:** HTML5 Expandable Format
+**MAIN ASSETS**
+⋅⋅* **Default Image:** Seleccionar la imagen de backup incluida en el zip de la creatividad. 
+⋅⋅* **Workspace Folder:** Fichero zip de la creatividad subido a la plataforma.
+**PANELS**
+Dentro del apartado de paneles tendremos que añadir los tres paneles de la creatividad con la siguiente configuracion:
+
+1. Skin Video
+⋅⋅* **Panel Name:** SkinVideo
+⋅⋅* **Asset:** Seleccionamos el fichero html correspondiente al skinVideo de la creatividad.
+⋅⋅* **X:** 0
+⋅⋅* **Y:** 0
+⋅⋅* **Width:** 0
+⋅⋅* **Height:** 0
+⋅⋅* **Position Type:** Page Relative(%) 
+⋅⋅* **Retractions:** Never
+
+2. Horizontal Visibility Panel
+⋅⋅* **Panel Name:** horizontalVisibilityPanel
+⋅⋅* **Asset:** Seleccionamos el fichero html correspondiente al horizontalVisibilityPanel de la plantilla.
+⋅⋅* **X:** 0
+⋅⋅* **Y:** 150
+⋅⋅* **Width:** 980
+⋅⋅* **Height:** 100
+⋅⋅* **Position Type:** Banner Relative
+⋅⋅* **Retractions:** Never
+
+3. Vertical Visibility Panel
+⋅⋅* **Panel Name:** verticalVisibilityPanel
+⋅⋅* **Asset:** Seleccionamos el fichero html correspondiente al verticalVisibilityPanel de la plantilla.
+⋅⋅* **X:** 980
+⋅⋅* **Y:** 0
+⋅⋅* **Width:** 100
+⋅⋅* **Height:** 300
+⋅⋅* **Position Type:** Banner Relative
+⋅⋅* **Retractions:** Never
+
 Este formato necesita un script en la configuración de la plataforma, pídele al equipo de Sizmek que te lo configure.
 
 ## FAQS
 
-¿Qué tamaño debe tener la base del formato? Este formato puede partir de cualquier base, para estar seguros del tamaño que se debe implementar lo mejor es consultar a la agencia de medios para que confirme como debe ser el formato. Los tamaños mas habituales son 1x1, 980x250, 990x250 y 980x90
+**¿Qué tamaño debe tener la base del formato?** Este formato puede partir de cualquier base, para estar seguros del tamaño que se debe implementar lo mejor es consultar a la agencia de medios para que confirme como debe ser el formato. Los tamaños mas habituales son 1x1, 980x250, 990x250 y 980x90
 
-¿La creatividad debe dejar el hueco para la zona superior del site? Cada soporte marca las directrices del formato, en este caso también es necesario consultar a la agencia de medios si el soporte admite ese hueco en la zona superior o si la creatividad debe expandirse desde el billboard.
+**¿La creatividad debe dejar el hueco para la zona superior del site?** Cada soporte marca las directrices del formato, en este caso también es necesario consultar a la agencia de medios si el soporte admite ese hueco en la zona superior o si la creatividad debe expandirse desde el billboard.
 
 ***
 
