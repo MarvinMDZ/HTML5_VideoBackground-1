@@ -74,9 +74,11 @@ Configurar el formato en la <a href="https://platform.sizmek.com">PLATAFORMA DE 
 LA configuración necesaria para que funcione el formato sería la siguiente:
 
 **Ad Format:** HTML5 Expandable Format
+
 **MAIN ASSETS**
   * **Default Image:** Seleccionar la imagen de backup incluida en el zip de la creatividad. 
   * **Workspace Folder:** Fichero zip de la creatividad subido a la plataforma.
+  
 **PANELS**
 Dentro del apartado de paneles tendremos que añadir los tres paneles de la creatividad con la siguiente configuracion:
 
