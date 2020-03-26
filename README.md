@@ -75,40 +75,40 @@ LA configuración necesaria para que funcione el formato sería la siguiente:
 
 **Ad Format:** HTML5 Expandable Format
 **MAIN ASSETS**
-⋅⋅* **Default Image:** Seleccionar la imagen de backup incluida en el zip de la creatividad. 
-⋅⋅* **Workspace Folder:** Fichero zip de la creatividad subido a la plataforma.
+  * **Default Image:** Seleccionar la imagen de backup incluida en el zip de la creatividad. 
+  * **Workspace Folder:** Fichero zip de la creatividad subido a la plataforma.
 **PANELS**
 Dentro del apartado de paneles tendremos que añadir los tres paneles de la creatividad con la siguiente configuracion:
 
 1. Skin Video
-⋅⋅* **Panel Name:** SkinVideo
-⋅⋅* **Asset:** Seleccionamos el fichero html correspondiente al skinVideo de la creatividad.
-⋅⋅* **X:** 0
-⋅⋅* **Y:** 0
-⋅⋅* **Width:** 0
-⋅⋅* **Height:** 0
-⋅⋅* **Position Type:** Page Relative(%) 
-⋅⋅* **Retractions:** Never
+  * **Panel Name:** SkinVideo
+  * **Asset:** Seleccionamos el fichero html correspondiente al skinVideo de la creatividad.
+  * **X:** 0
+  * **Y:** 0
+  * **Width:** 0
+  * **Height:** 0
+  * **Position Type:** Page Relative(%) 
+  * **Retractions:** Never
 
 2. Horizontal Visibility Panel
-⋅⋅* **Panel Name:** horizontalVisibilityPanel
-⋅⋅* **Asset:** Seleccionamos el fichero html correspondiente al horizontalVisibilityPanel de la plantilla.
-⋅⋅* **X:** 0
-⋅⋅* **Y:** 150
-⋅⋅* **Width:** 980
-⋅⋅* **Height:** 100
-⋅⋅* **Position Type:** Banner Relative
-⋅⋅* **Retractions:** Never
+  * **Panel Name:** horizontalVisibilityPanel
+  * **Asset:** Seleccionamos el fichero html correspondiente al horizontalVisibilityPanel de la plantilla.
+  * **X:** 0
+  * **Y:** 150
+  * **Width:** 980
+  * **Height:** 100
+  * **Position Type:** Banner Relative
+  * **Retractions:** Never
 
 3. Vertical Visibility Panel
-⋅⋅* **Panel Name:** verticalVisibilityPanel
-⋅⋅* **Asset:** Seleccionamos el fichero html correspondiente al verticalVisibilityPanel de la plantilla.
-⋅⋅* **X:** 980
-⋅⋅* **Y:** 0
-⋅⋅* **Width:** 100
-⋅⋅* **Height:** 300
-⋅⋅* **Position Type:** Banner Relative
-⋅⋅* **Retractions:** Never
+  * **Panel Name:** verticalVisibilityPanel
+  * **Asset:** Seleccionamos el fichero html correspondiente al verticalVisibilityPanel de la plantilla.
+  * **X:** 980
+  * **Y:** 0
+  * **Width:** 100
+  * **Height:** 300
+  * **Position Type:** Banner Relative
+  * **Retractions:** Never
 
 Este formato necesita un script en la configuración de la plataforma, pídele al equipo de Sizmek que te lo configure.
 
