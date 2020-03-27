@@ -1,11 +1,11 @@
+# <a href="https://platform.sizmek.com"><img src="https://github.com/MarvinMDZ/Readme_Resources/raw/master/Images/HTML5_logo.png" alt="Sizmek" width="26" height="36" /></a> VideoBackground Viewability <a href="https://platform.sizmek.com"><img src="https://github.com/MarvinMDZ/Readme_Resources/raw/master/Images/logo-dark.png" alt="Sizmek" width="57" height="15" /></a>
+
+Plantilla genérica con todo lo necesario para crear formatos tipo VideoBackground utilizando workspaces de Sizmek.
+
 # <p align="center"> <img src="https://github.com/MarvinMDZ/Readme_Resources/raw/master/Images/warning.png" alt="Sizmek" width="30" height="30" /> WARNING <img src="https://github.com/MarvinMDZ/Readme_Resources/raw/master/Images/warning.png" alt="Sizmek" width="30" height="30" /></p>
 
 ### <p align="center">Esta plantilla utiliza un sistema que permite medir la visibilidad del formato mediante un panel flotante que se sitúa en el lateral del skin, o en su defecto, sobre el billboard de la pieza para resoluciones en las que el lateral no sea visible.</p>
 ### <p align="center">Este sistema no sigue el standard de visibilidad de la IAB. La utilización de esta plantilla implica que entiendes y aceptas este sistema de medición.</p>
-
-# <a href="https://platform.sizmek.com"><img src="https://github.com/MarvinMDZ/Readme_Resources/raw/master/Images/HTML5_logo.png" alt="Sizmek" width="26" height="36" /></a> VideoBackground Viewability <a href="https://platform.sizmek.com"><img src="https://github.com/MarvinMDZ/Readme_Resources/raw/master/Images/logo-dark.png" alt="Sizmek" width="57" height="15" /></a>
-
-Plantilla genérica con todo lo necesario para crear formatos tipo VideoBackground utilizando workspaces de Sizmek.
 
 ## Descripción
 
